@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        /*body {
+            background-image: url('./clint-patterson-dYEuFB8KQJk-unsplash.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }*/
+        body {
+            background: linear-gradient(to bottom right, #FFC0CB, #87CEFA, #32CD32);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .form-control:focus {
+            color: var(--bs-body-color);
+            background-color: var(--bs-body-bg);
+            /* border-color: #86b7fe; */
+            outline: 0;
+            /* box-shadow: 0 0 0 .25rem rgba(linear-gradient(to bottom right, #FFC0CB, #87CEFA, #32CD32)); */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center mt-5">
+            <div class="col-6 text-bg-light bg-opacity-25 mt-5 rounded-5 p-5">
+                <form>
+                    <div class="mb-3">
+                        <label for="titleInput" class="form-label">Title</label>
+                        <input type="text" class="form-control" id="titleInput" aria-describedby="titleHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="textInput" class="form-label">Content</label>
+                        <textarea class="form-control" id="textInput" rows="5" style="resize: none;"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="selectMenu" class="form-label">Media Type</label>
+                        <select class="form-select" id="selectMenu">
+                            <option selected> select Media Type</option>
+                            <option value="Video">Video</option>
+                            <option value="Image">Image</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mediaTypeInput" class="form-label">Media</label>
+                        <input type="file" class="form-control" id="mediaTypeInput">
+                    </div>
+                    <div class="mb-3">
+                        <label for="statusSelect" class="form-label">Status</label>
+                        <select class="form-select" id="statusSelect">
+                            <option selected>Open this select Status</option>
+                            <option value="active">Active</option>
+                            <option value="deactive">Deactive</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-danger">Back</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
